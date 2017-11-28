@@ -1,0 +1,27 @@
+<?php
+  define('BOT_TOKEN', 'your token bot here');
+  define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
+
+  define('COMMANDS_DIR', 'commands/');
+
+  define('COMMAND', [
+    'start' => [
+      'file' => COMMANDS_DIR.'Start.php',
+      'class'=>'Start',
+      'description'=>'Comando de inicio',
+      'public'=>true,
+    ],
+    'help' => [
+      'file' => COMMANDS_DIR.'Help.php',
+      'class'=>'Help',
+      'description'=>'Ayuda del Bot',
+      'public'=>true,
+    ],
+    'helloworld' => [
+      'file' => COMMANDS_DIR.'HelloWorld.php',
+      'class'=>'HelloWorld',
+      'description'=>'Hola Mundo desde el bot',
+      'public'=>true,
+    ],
+  ]
+);
